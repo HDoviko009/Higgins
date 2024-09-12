@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">This is a paragraph</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <!-- <div id="mydiv">
+        <h1>This is the header</h1>
+    </div> -->
+    <!-- must be written at the bottom of the body to executed at the end. -->
+     <!-- steTimeout needs function to be passed and the amount of time to be delayed -->
+    <script>
+        setTimeout(() => {
+            const para = document.getElementsByTagName("p");
+            for(const p of para){
+                p.innerText = "paragraph text changed"
+            }
+        },5000)
+        // const p = document.getElementById("myp");
+        // p.innerText = "This is new text done in JS";
+        // alert(p.innerText);
+
+        // const div = document.getElementById("mydiv");
+        // alert(div.innerHTML);
+
+        // const age = prompt("How old are you?");
+        // alert(`Your age is ${age}`);
+        // const userChoice = confirm("Are you sure you want to close the tab?");
+        // if(userChoice){
+        //     close();
+        // }
+        // alert(userChoice);
+    </script>
+</body>
+</html>

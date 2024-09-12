@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            /* color: rgb(13, 13, 80);
+            padding: 5rem;
+            border: 0.2rem solid #dddddd;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3rem; */
+        }
+        .one{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <p id="p" class="one">This is paragraph</p>
+    <!-- <a id="link"></a> -->
+    <script>
+        setTimeout(() => {
+           const p = document.getElementById("p");
+           p.classList.add("first");
+           p.classList.remove("one");
+        },5000)
+    </script>
+    <!-- link.innerText = "Google";
+    link.setAttribute("href", "www.google.com") -->
+</body>
+</html>

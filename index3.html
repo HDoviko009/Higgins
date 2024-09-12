@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h5 class="heading">first</h5>
+   <h5 class="heading">second</h5>
+   <h5 class="heading">third</h5>
+   <script>
+    setTimeout(() => {
+            const h5 = document.getElementsByClassName("heading");
+            for(const h of h5){
+                h.innerText = "h5 text changed";
+                h.style.color = "blue";
+                h.style.fontSize = 50;
+                h.style.backgroundColor = "red";
+            }
+        },5000)
+   </script>
+</body>
+</html>
